@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73D09BD71CECC8B5002C0306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D09BD61CECC8B5002C0306 /* main.m */; };
+		73D09BDA1CECC8B5002C0306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D09BD91CECC8B5002C0306 /* AppDelegate.m */; };
+		73D09BDD1CECC8B5002C0306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D09BDC1CECC8B5002C0306 /* ViewController.m */; };
+		73D09BE01CECC8B5002C0306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D09BDE1CECC8B5002C0306 /* Main.storyboard */; };
+		73D09BE31CECC8B5002C0306 /* clockStopWatchApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73D09BE11CECC8B5002C0306 /* clockStopWatchApp.xcdatamodeld */; };
+		73D09BE51CECC8B5002C0306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D09BE41CECC8B5002C0306 /* Assets.xcassets */; };
+		73D09BE81CECC8B5002C0306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D09BE61CECC8B5002C0306 /* LaunchScreen.storyboard */; };
+		73D09BF31CECC8B5002C0306 /* clockStopWatchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D09BF21CECC8B5002C0306 /* clockStopWatchAppTests.m */; };
+		73D09BFE1CECC8B5002C0306 /* clockStopWatchAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D09BFD1CECC8B5002C0306 /* clockStopWatchAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73D09BEF1CECC8B5002C0306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73D09BCA1CECC8B5002C0306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D09BD11CECC8B5002C0306;
+			remoteInfo = clockStopWatchApp;
+		};
+		73D09BFA1CECC8B5002C0306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73D09BCA1CECC8B5002C0306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D09BD11CECC8B5002C0306;
+			remoteInfo = clockStopWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73D09BD21CECC8B5002C0306 /* clockStopWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clockStopWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D09BD61CECC8B5002C0306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73D09BD81CECC8B5002C0306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		73D09BD91CECC8B5002C0306 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		73D09BDB1CECC8B5002C0306 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		73D09BDC1CECC8B5002C0306 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		73D09BDF1CECC8B5002C0306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73D09BE21CECC8B5002C0306 /* clockStopWatchApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = clockStopWatchApp.xcdatamodel; sourceTree = "<group>"; };
+		73D09BE41CECC8B5002C0306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73D09BE71CECC8B5002C0306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73D09BE91CECC8B5002C0306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D09BEE1CECC8B5002C0306 /* clockStopWatchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clockStopWatchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D09BF21CECC8B5002C0306 /* clockStopWatchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clockStopWatchAppTests.m; sourceTree = "<group>"; };
+		73D09BF41CECC8B5002C0306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D09BF91CECC8B5002C0306 /* clockStopWatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clockStopWatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D09BFD1CECC8B5002C0306 /* clockStopWatchAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clockStopWatchAppUITests.m; sourceTree = "<group>"; };
+		73D09BFF1CECC8B5002C0306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73D09BCF1CECC8B5002C0306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D09BEB1CECC8B5002C0306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D09BF61CECC8B5002C0306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73D09BC91CECC8B5002C0306 = {
+			isa = PBXGroup;
+			children = (
+				73D09BD41CECC8B5002C0306 /* clockStopWatchApp */,
+				73D09BF11CECC8B5002C0306 /* clockStopWatchAppTests */,
+				73D09BFC1CECC8B5002C0306 /* clockStopWatchAppUITests */,
+				73D09BD31CECC8B5002C0306 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73D09BD31CECC8B5002C0306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73D09BD21CECC8B5002C0306 /* clockStopWatchApp.app */,
+				73D09BEE1CECC8B5002C0306 /* clockStopWatchAppTests.xctest */,
+				73D09BF91CECC8B5002C0306 /* clockStopWatchAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73D09BD41CECC8B5002C0306 /* clockStopWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				73D09BD81CECC8B5002C0306 /* AppDelegate.h */,
+				73D09BD91CECC8B5002C0306 /* AppDelegate.m */,
+				73D09BDB1CECC8B5002C0306 /* ViewController.h */,
+				73D09BDC1CECC8B5002C0306 /* ViewController.m */,
+				73D09BDE1CECC8B5002C0306 /* Main.storyboard */,
+				73D09BE41CECC8B5002C0306 /* Assets.xcassets */,
+				73D09BE61CECC8B5002C0306 /* LaunchScreen.storyboard */,
+				73D09BE91CECC8B5002C0306 /* Info.plist */,
+				73D09BE11CECC8B5002C0306 /* clockStopWatchApp.xcdatamodeld */,
+				73D09BD51CECC8B5002C0306 /* Supporting Files */,
+			);
+			path = clockStopWatchApp;
+			sourceTree = "<group>";
+		};
+		73D09BD51CECC8B5002C0306 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73D09BD61CECC8B5002C0306 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73D09BF11CECC8B5002C0306 /* clockStopWatchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				73D09BF21CECC8B5002C0306 /* clockStopWatchAppTests.m */,
+				73D09BF41CECC8B5002C0306 /* Info.plist */,
+			);
+			path = clockStopWatchAppTests;
+			sourceTree = "<group>";
+		};
+		73D09BFC1CECC8B5002C0306 /* clockStopWatchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				73D09BFD1CECC8B5002C0306 /* clockStopWatchAppUITests.m */,
+				73D09BFF1CECC8B5002C0306 /* Info.plist */,
+			);
+			path = clockStopWatchAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73D09BD11CECC8B5002C0306 /* clockStopWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D09C021CECC8B5002C0306 /* Build configuration list for PBXNativeTarget "clockStopWatchApp" */;
+			buildPhases = (
+				73D09BCE1CECC8B5002C0306 /* Sources */,
+				73D09BCF1CECC8B5002C0306 /* Frameworks */,
+				73D09BD01CECC8B5002C0306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clockStopWatchApp;
+			productName = clockStopWatchApp;
+			productReference = 73D09BD21CECC8B5002C0306 /* clockStopWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73D09BED1CECC8B5002C0306 /* clockStopWatchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D09C051CECC8B5002C0306 /* Build configuration list for PBXNativeTarget "clockStopWatchAppTests" */;
+			buildPhases = (
+				73D09BEA1CECC8B5002C0306 /* Sources */,
+				73D09BEB1CECC8B5002C0306 /* Frameworks */,
+				73D09BEC1CECC8B5002C0306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73D09BF01CECC8B5002C0306 /* PBXTargetDependency */,
+			);
+			name = clockStopWatchAppTests;
+			productName = clockStopWatchAppTests;
+			productReference = 73D09BEE1CECC8B5002C0306 /* clockStopWatchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73D09BF81CECC8B5002C0306 /* clockStopWatchAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D09C081CECC8B5002C0306 /* Build configuration list for PBXNativeTarget "clockStopWatchAppUITests" */;
+			buildPhases = (
+				73D09BF51CECC8B5002C0306 /* Sources */,
+				73D09BF61CECC8B5002C0306 /* Frameworks */,
+				73D09BF71CECC8B5002C0306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73D09BFB1CECC8B5002C0306 /* PBXTargetDependency */,
+			);
+			name = clockStopWatchAppUITests;
+			productName = clockStopWatchAppUITests;
+			productReference = 73D09BF91CECC8B5002C0306 /* clockStopWatchAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73D09BCA1CECC8B5002C0306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = RLDT;
+				TargetAttributes = {
+					73D09BD11CECC8B5002C0306 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					73D09BED1CECC8B5002C0306 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 73D09BD11CECC8B5002C0306;
+					};
+					73D09BF81CECC8B5002C0306 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 73D09BD11CECC8B5002C0306;
+					};
+				};
+			};
+			buildConfigurationList = 73D09BCD1CECC8B5002C0306 /* Build configuration list for PBXProject "clockStopWatchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73D09BC91CECC8B5002C0306;
+			productRefGroup = 73D09BD31CECC8B5002C0306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73D09BD11CECC8B5002C0306 /* clockStopWatchApp */,
+				73D09BED1CECC8B5002C0306 /* clockStopWatchAppTests */,
+				73D09BF81CECC8B5002C0306 /* clockStopWatchAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73D09BD01CECC8B5002C0306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D09BE81CECC8B5002C0306 /* LaunchScreen.storyboard in Resources */,
+				73D09BE51CECC8B5002C0306 /* Assets.xcassets in Resources */,
+				73D09BE01CECC8B5002C0306 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D09BEC1CECC8B5002C0306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D09BF71CECC8B5002C0306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73D09BCE1CECC8B5002C0306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D09BE31CECC8B5002C0306 /* clockStopWatchApp.xcdatamodeld in Sources */,
+				73D09BDD1CECC8B5002C0306 /* ViewController.m in Sources */,
+				73D09BDA1CECC8B5002C0306 /* AppDelegate.m in Sources */,
+				73D09BD71CECC8B5002C0306 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D09BEA1CECC8B5002C0306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D09BF31CECC8B5002C0306 /* clockStopWatchAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D09BF51CECC8B5002C0306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D09BFE1CECC8B5002C0306 /* clockStopWatchAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73D09BF01CECC8B5002C0306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73D09BD11CECC8B5002C0306 /* clockStopWatchApp */;
+			targetProxy = 73D09BEF1CECC8B5002C0306 /* PBXContainerItemProxy */;
+		};
+		73D09BFB1CECC8B5002C0306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73D09BD11CECC8B5002C0306 /* clockStopWatchApp */;
+			targetProxy = 73D09BFA1CECC8B5002C0306 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73D09BDE1CECC8B5002C0306 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73D09BDF1CECC8B5002C0306 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73D09BE61CECC8B5002C0306 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73D09BE71CECC8B5002C0306 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73D09C001CECC8B5002C0306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		73D09C011CECC8B5002C0306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73D09C031CECC8B5002C0306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = clockStopWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.clockStopWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		73D09C041CECC8B5002C0306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = clockStopWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.clockStopWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		73D09C061CECC8B5002C0306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = clockStopWatchAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.clockStopWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clockStopWatchApp.app/clockStopWatchApp";
+			};
+			name = Debug;
+		};
+		73D09C071CECC8B5002C0306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = clockStopWatchAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.clockStopWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/clockStopWatchApp.app/clockStopWatchApp";
+			};
+			name = Release;
+		};
+		73D09C091CECC8B5002C0306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = clockStopWatchAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.clockStopWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = clockStopWatchApp;
+			};
+			name = Debug;
+		};
+		73D09C0A1CECC8B5002C0306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = clockStopWatchAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RLDT.clockStopWatchAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = clockStopWatchApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73D09BCD1CECC8B5002C0306 /* Build configuration list for PBXProject "clockStopWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D09C001CECC8B5002C0306 /* Debug */,
+				73D09C011CECC8B5002C0306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D09C021CECC8B5002C0306 /* Build configuration list for PBXNativeTarget "clockStopWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D09C031CECC8B5002C0306 /* Debug */,
+				73D09C041CECC8B5002C0306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		73D09C051CECC8B5002C0306 /* Build configuration list for PBXNativeTarget "clockStopWatchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D09C061CECC8B5002C0306 /* Debug */,
+				73D09C071CECC8B5002C0306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		73D09C081CECC8B5002C0306 /* Build configuration list for PBXNativeTarget "clockStopWatchAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D09C091CECC8B5002C0306 /* Debug */,
+				73D09C0A1CECC8B5002C0306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		73D09BE11CECC8B5002C0306 /* clockStopWatchApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				73D09BE21CECC8B5002C0306 /* clockStopWatchApp.xcdatamodel */,
+			);
+			currentVersion = 73D09BE21CECC8B5002C0306 /* clockStopWatchApp.xcdatamodel */;
+			path = clockStopWatchApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 73D09BCA1CECC8B5002C0306 /* Project object */;
+}

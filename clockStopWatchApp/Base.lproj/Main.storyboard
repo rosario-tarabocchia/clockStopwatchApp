@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="45" id="tvY-rn-AUh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Stop Watch">
+                                <state key="normal" title="Countdown">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

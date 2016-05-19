@@ -57,9 +57,10 @@
     [self.clockLabel setHidden:YES];
     [self.timePicker setHidden:NO];
     [self.currentTimeButton setHidden:NO];
+    [self.stopwatchUpButton setHidden:NO];
     [self.stopWatchButton setHidden:YES];
     [self startTheCountDownOver];
-    [self.stopwatchUpButton setHidden:NO];
+    
     
 
 
@@ -86,10 +87,12 @@
     
     
     [self.currentTime invalidate];
+    [self.stopWatchButton setHidden:NO];
     [self.stopwatchUpButton setHidden:YES];
     [self.currentTimeButton setHidden:NO];
     [self startTheCountDownOver];
     [self.timePicker setHidden:YES];
+    [self.clockLabel setHidden:NO];
     
     
     
@@ -97,17 +100,7 @@
 
 - (IBAction)restartButtonAction:(UIButton *)sender {
     
-    if (self.stopWatchButton.hidden == TRUE) {
-        [self startCountDown];
-    }
-    
-    else {
-        
-        
-        [self startCountDownUp];
-    }
-    
-    
+    [self startCountDown];
     [self.pauseButton setHidden:NO];
     [self.restartButton setHidden:YES];
     
@@ -115,20 +108,13 @@
 
 - (IBAction)startButtonAction:(UIButton *)sender {
     
-    
-    
-    if (self.stopWatchButton.hidden == TRUE) {
+    if (self.stopWatchButton.hidden) {
+        
         self.secondsLeft = self.timePicker.countDownDuration;
-        [self startCountDown];
+
     }
-    
-    else {
-        
-        
-        [self startCountDownUp];
-    }
-    
-    
+
+    [self startCountDown];
     [self.startButton setHidden:YES];
     [self.pauseButton setHidden:NO];
     [self.cancelButton setHidden:NO];
@@ -147,23 +133,8 @@
 
 - (IBAction)cancelButtonAction:(UIButton *)sender {
     
-    
-    if (self.stopWatchButton.hidden == TRUE) {
-        
-        [self startTheCountDownOver];
-    }
-    
-    else {
-        
-        [self startTheCountDownOver];
-        [self.timePicker setHidden:YES];
-        
-    }
-
-    
-    
-    
-    
+    [self startTheCountDownOver];
+       
 }
 
 -(void)fireCurrentTime {
@@ -202,17 +173,25 @@
     
     [self labelTextFormat];
     
-    self.secondsLeft -= 1;
+    if (self.stopWatchButton.hidden == YES) {
+        
+            self.secondsLeft -= 1;
+        
+        if (self.secondsLeft == 0) {
+            
+            [self.stopWatchTime invalidate];
+            self.stopWatchTime = nil;
+            self.clockLabel.text = [NSString stringWithFormat:@"00:00:00"];
+            self.clockLabel.textColor = [UIColor redColor];
+            
+            [self.pauseButton setHidden:YES];
+            
+        }
+    }
     
-    if (self.secondsLeft == 0) {
+    else {
         
-        [self.stopWatchTime invalidate];
-        self.stopWatchTime = nil;
-        
-        self.clockLabel.text = [NSString stringWithFormat:@"00:00:00"];
-        self.clockLabel.textColor = [UIColor redColor];
-        
-        [self.pauseButton setHidden:YES];
+        self.secondsLeft += 1;
         
     }
     
@@ -220,12 +199,14 @@
 
 -(void)startCountDown {
     
-    
+
+        
     self.stopWatchTime = [NSTimer scheduledTimerWithTimeInterval:1
-                                                  target:self
-                                                selector:@selector(updateTimeLeftOnLabel)
-                                                userInfo:nil
-                                                 repeats:YES];
+                                                          target:self
+                                                        selector:@selector(updateTimeLeftOnLabel)
+                                                        userInfo:nil
+                                                         repeats:YES];
+
     [self.stopWatchTime fire];
     
     
@@ -235,12 +216,25 @@
 
 -(void)startTheCountDownOver {
     
+    if (self.stopWatchButton.hidden) {
+        
+        [self.timePicker setHidden:NO];
+        [self.clockLabel setHidden:YES];
+        
+    }
     
-    [self.timePicker setHidden:NO];
+    else {
+        
+        [self.timePicker setHidden:YES];
+        [self.clockLabel setHidden:NO];
+        
+    }
+    
+    
+    
     [self.startButton setHidden:NO];
     [self.cancelButton setHidden:YES];
     [self.pauseButton setHidden:YES];
-    [self.clockLabel setHidden:YES];
     [self.restartButton setHidden:YES];
     
     self.timePicker.countDownDuration = 60.0f;
@@ -249,33 +243,15 @@
     
     self.secondsLeft = 0;
     
+    [self updateTimeLeftOnLabel];
+    
     self.clockLabel.textColor = [UIColor blackColor];
     
 }
 
--(void)updateTimeLeftOnLabelUp {
-    
-    
-    [self labelTextFormat];
-    
-    self.secondsLeft += 1;
-    
-}
 
--(void)startCountDownUp {
-    
-    
-    self.stopWatchTime = [NSTimer scheduledTimerWithTimeInterval:1
-                                                          target:self
-                                                        selector:@selector(updateTimeLeftOnLabelUp)
-                                                        userInfo:nil
-                                                         repeats:YES];
-    [self.stopWatchTime fire];
-    
-    
-    
-    
-}
+
+
 
 
 

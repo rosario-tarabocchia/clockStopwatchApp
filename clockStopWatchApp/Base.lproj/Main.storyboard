@@ -34,7 +34,7 @@
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5v-nT-SLr">
-                                <rect key="frame" x="240" y="228" width="120" height="45"/>
+                                <rect key="frame" x="175" y="228" width="120" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.75657894739999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Edg-Rt-UjJ"/>
@@ -123,11 +123,27 @@
                                     <action selector="restartButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOf-Tr-6km"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC4-f6-nzQ">
+                                <rect key="frame" x="305" y="228" width="120" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.75657894739999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="cH9-UI-SYf"/>
+                                    <constraint firstAttribute="height" constant="45" id="ieI-K3-WDj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Stop Watch">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="countUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="162-LE-5hI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tUX-9J-PfW" firstAttribute="top" secondItem="l5v-nT-SLr" secondAttribute="bottom" constant="8" id="0YZ-C3-xXZ"/>
                             <constraint firstItem="400-Co-hPf" firstAttribute="top" secondItem="Byb-It-5ed" secondAttribute="bottom" constant="8" id="21D-Z5-G5p"/>
+                            <constraint firstItem="HC4-f6-nzQ" firstAttribute="leading" secondItem="l5v-nT-SLr" secondAttribute="trailing" constant="10" id="2Gh-bp-E0W"/>
                             <constraint firstItem="la5-M1-7qE" firstAttribute="top" secondItem="400-Co-hPf" secondAttribute="bottom" constant="8" id="5Zj-fw-dCG"/>
                             <constraint firstItem="bmW-J1-5dk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7Jb-Wa-y0a"/>
                             <constraint firstItem="bmW-J1-5dk" firstAttribute="width" secondItem="EGQ-p2-n06" secondAttribute="width" id="A6R-ZS-FK8"/>
@@ -135,7 +151,7 @@
                             <constraint firstItem="Byb-It-5ed" firstAttribute="top" secondItem="tUX-9J-PfW" secondAttribute="bottom" constant="8" id="GT9-t2-VA9"/>
                             <constraint firstItem="la5-M1-7qE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J2Z-fo-sDF"/>
                             <constraint firstItem="400-Co-hPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZa-P3-3Jf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l5v-nT-SLr" secondAttribute="trailing" constant="220" id="R3C-ci-Lw7"/>
+                            <constraint firstItem="HC4-f6-nzQ" firstAttribute="top" secondItem="bmW-J1-5dk" secondAttribute="bottom" constant="8" id="V2A-oK-tNI"/>
                             <constraint firstItem="shC-se-TNa" firstAttribute="top" secondItem="l5v-nT-SLr" secondAttribute="bottom" constant="8" id="Whn-Cu-vaC"/>
                             <constraint firstItem="EGQ-p2-n06" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WrI-Ad-ywG"/>
                             <constraint firstItem="bmW-J1-5dk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Yx1-Xn-eH8"/>
@@ -145,7 +161,7 @@
                             <constraint firstItem="EGQ-p2-n06" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="l1Z-bc-H0W"/>
                             <constraint firstItem="bmW-J1-5dk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m6F-Jm-rZ1"/>
                             <constraint firstItem="EGQ-p2-n06" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mTT-16-adp"/>
-                            <constraint firstItem="l5v-nT-SLr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPl-dd-emF"/>
+                            <constraint firstItem="l5v-nT-SLr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65" id="pPl-dd-emF"/>
                             <constraint firstItem="shC-se-TNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wVZ-LO-aOO"/>
                         </constraints>
                     </view>
@@ -157,6 +173,7 @@
                         <outlet property="restartButton" destination="tUX-9J-PfW" id="tgb-Kq-cTh"/>
                         <outlet property="startButton" destination="shC-se-TNa" id="hEt-8M-BQd"/>
                         <outlet property="stopWatchButton" destination="l5v-nT-SLr" id="1bU-u4-7Ap"/>
+                        <outlet property="stopwatchUpButton" destination="HC4-f6-nzQ" id="5ku-fZ-lgq"/>
                         <outlet property="timePicker" destination="bmW-J1-5dk" id="uw4-tW-aVW"/>
                     </connections>
                 </viewController>
